@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "21998915",
+        formId: "1a254fdd-e172-46a1-889d-0be51d726daa",
+      })
+    </script>
+    <style>
+        html {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        font-family: sans-serif;
+    }
+      form{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.25rem;
+      }
+      .hs_firstname, .hs_company,
+      .hs_email, .hs_phone, .hs_message {
+      /*.hs-fieldtype-text{*/
+        padding: 1.06rem 1.5rem;
+        border-style: solid;
+        border-width: 2px;
+        border-top-color: hsl(223deg 100% 15%);
+        border-right-color: hsl(223deg 100% 15%);
+        border-bottom-color: hsl(223deg 100% 15%);
+        border-left-color: hsl(223deg 100% 15%);
+        border-radius: 1rem;
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+      }
+      #message-1a254fdd-e172-46a1-889d-0be51d726daa{
+        outline: none;
+      }
+      .hs_company > label,
+      .hs_firstname > label,
+      .hs_email > label,
+      .hs_phone > label,
+      .hs_message > label,
+      .hs-fieldtype-radio > label,
+      .hs-form-booleancheckbox > label > span > p{
+      /*label{*/
+        margin-bottom: 0.125rem;
+        font-weight: 700;
+        color: #001552;
+      }
+      .input > input {
+      /*input {*/
+        color: inherit;
+        text-decoration: inherit;
+        font-size: inherit;
+
+
+        height: auto;
+        min-height: 2.75rem;
+        margin-bottom: 0px;
+        padding-left: 0px;
+        border-color: transparent;
+        font-size: 1rem;
+        line-height: 1.625rem;
+        width: 100%;
+      }
+        #phone-email-wrapper {
+        display: grid;
+        grid-auto-columns: 1fr;
+        gap: 1.5rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+      }
+
+      .hs-fieldtype-radio{
+        padding: 0rem;
+        border-style: none;
+      }
+
+      .hs-fieldtype-radio > label,
+      [data-reactid=".hbspt-forms-0.1:$4.$0-2/type"],
+      .legal-consent-container{
+        margin-top: 0rem;
+        margin-right: 0rem;
+        margin-left: 0rem;
+      }
+      .hs-form-radio-display{
+        padding:  15px;
+      }
+
+      .inputs-list{
+        list-style: none;
+      }
+
+      .legal-consent-container{
+        display: flex;
+        margin-bottom: 0px;
+        padding-left: 1.25rem;
+        align-items: center;
+      }
+      P{
+        margin-bottom: 0px;
+        font-weight: 400;
+        display: inline-block;
+      }
+
+
+      .actions > input{
+        width: 100%;
+        max-width: 19.125rem;
+        font-size: 1rem;
+        padding: 1.31rem 2rem;
+        line-height: 1.25;
+        border-radius: 2.75rem;
+        background-color: hsl(223deg 100% 56%);
+        transition-property: transform, background-color;
+        transition-duration: 700ms, 700ms;
+        transition-timing-function: ease, ease;
+        color: hsl(0deg 0% 100%);
+        font-weight: 700;
+        text-align: center;
+        border: none;
+        -webkit-padding-start: 2rem;
+        -webkit-padding-end: 2rem;
+		-webkit-padding-after: 1.3rem;
+		-webkit-padding-before: 1.3rem;
+      }
+      .hs-error-msgs{
+        color: red;
+        font-size: 1rem;
+      }
+      input:focus-visible {
+        border-color: none !important ;
+        outline: 0;
+      }
+      .div_error{
+       border-top-color: red !important;
+      border-right-color: red !important;
+      border-bottom-color: red !important;
+      border-left-color: red !important;
+      }
+      .hs-form-radio, .hs-button{
+        cursor: pointer;
+      }
+      .hs-form-radio:hover {
+        color: white;
+        background: hsl(223deg 100% 15%);
+      }
+
+      .hs-form-checkbox{
+        display: inline-grid;
+      }
+      .hs-form-checkbox-display > .hs-input:checked + span {
+        background-color: hsl(223deg 100% 15%);
+        color: white;
+      }
+      .hs-form-checkbox-display > .hs-input {
+        position: absolute;
+        /* top: -20px; */
+        display: none;
+      }
+
+      ul.inputs-list.multi-container {
+        float: left;
+        margin-left: -5%;
+      }
+      .hs-form-checkbox-display > .hs-input + span {
+        padding: 10px 16px;
+        margin: 0;
+        border-radius: 27px;
+        border: 1px solid hsl(223deg 100% 15%);
+        color: hsl(223deg 100% 15%);
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .hs-form-checkbox-display > .hs-input + span:hover{
+        background-color: hsl(223deg 100% 15%);
+        color: white;
+      }
+      .hs-form-booleancheckbox-display{
+      	margin-left: -5%;
+      }
+      .hs-form-booleancheckbox-display > .hs-input{
+        width: 1.5rem;
+        height: 1.5rem;
+        min-height: 1.5rem;
+        min-width: 1.5rem;
+        margin-top: 0px;
+        margin-right: 1rem;
+        margin-left: -1.25rem;
+        border-width: 2px;
+        border-top-color: hsl(223deg 100% 15%);
+        border-right-color: hsl(223deg 100% 15%);
+        border-bottom-color: hsl(223deg 100% 15%);
+        border-left-color: hsl(223deg 100% 15%);
+        border-radius: 0.5rem;
+        transition-property: all;
+        transition-duration: 200ms;
+        transition-timing-function: ease;
+        box-sizing: border-box;
+        padding: 0;
+      }
+      
+      .hs-fieldtype-checkbox > label{
+      	font-weight: 700;
+        font-size: 20px;
+      }
+      
+      .hs-form-booleancheckbox-display > span{
+      	font-weight: 400;
+        color:  #00164E
+      }
+      
+      .hs-form-booleancheckbox-display > input{
+      	color:  #00164E;
+        border-radius: 8px;
+      }
+      @media screen and (max-width: 768px){
+        html {
+            font-size: 1rem;
+        }
+        .hs_email{
+            width: 42%;
+        }
+        .hs_phone{
+            width: 42%;
+            margin-top: -17.2%;
+            margin-left: 50%;
+        }
+      }
+        
+      @media (max-width:  478px){
+        #phone-email-wrapper{
+          display: block;
+        }
+        .hs_phone {
+          margin-top: 5%;
+        }
+        .hs-error-msg{
+          margin-left:  -13%;
+        }
+        [role='checkbox']{
+          gap: 0.4rem 1.7rem;
+        }
+        [role="checkbox"] > li{
+          margin-top: 3%;
+        }
+        .hs-form-radio-display {
+          padding: 6px;
+        }
+      }
+      #message-1a254fdd-e172-46a1-889d-0be51d726daa {
+          min-height: 5.25rem;
+          max-width: 100%;
+          min-width: 100%;
+          padding-top: 0.5rem;
+          background: transparent;
+          border-color: transparent;
+      }
+      ::-webkit-input-placeholder { 
+          font-size: 1rem;
+          line-height: 1.625rem;
+      }
+      ::-moz-placeholder { 
+          font-size: 1rem;
+          line-height: 1.625rem;
+      }
+      :-ms-input-placeholder {
+      font-size: 1rem;
+      line-height: 1.625rem;
+      }
+      :-moz-placeholder { 
+      font-size: 1rem;
+      line-height: 1.625rem;
+      }
+      * {
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+    .fs-cc-prefs_content{
+        -webkit-overflow-scrolling: touch
+    }
+    html { 
+        font-size: calc(0.625rem + 0.41666666666666663vw);
+    }
+  @media screen and (max-width:1920px) { 
+    html { 
+        font-size: 1rem; 
+        } 
+    }
+  @media screen and (max-width:1440px) { 
+    html {
+         font-size: 1rem; 
+        } 
+    }
+  @media screen and (max-width:479px) {
+     html { 
+        font-size: 1rem; 
+    } 
+}
+.w-richtext>:first-child {
+	margin-top: 0;
+}
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+    margin-bottom: 0;
+}
+.w-input, .w-select, a {
+    color: inherit;
+    text-decoration: inherit;
+    font-size: inherit;
+}
+
+	@media screen and (max-width:480px){
+    .legal-consent-container{
+      padding-left: 5px !important;
+    }
+    .hs-fieldtype-checkbox > div > ul{
+    	margin-left: -10% !important;
+    }
+  }
+  .fs-cc-prefs_content{
+    -webkit-overflow-scrolling: touch
+    }
+    </style>
+</body>
+</html>
