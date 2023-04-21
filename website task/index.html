@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
     <style>
@@ -17,194 +15,207 @@
             margin-left: 0%;
             margin-right: 0%;
             margin-bottom: 0%;
-            background-image: url('background1.AVIF');
-            background-color: #EFEFEF;
-        }
-        
-        .nav {
-            padding: 11px;
-            border: 1px solid;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('background1.AVIF');
+            background-size: cover;
+            background-position: center;
             background-color: #FFFFFF;
-            border: 2px solid #FFFFFF;
         }
-        .info{
-            background-color: #EFEFEF;
-            border: 2px solid #EFEFEF;
+        .navbar {
+          overflow: hidden;
         }
-        .nav a {
-            color: #222222;
+
+        .navbar a {
+          float: left;
+          font-size: 16px;
+          color: #FFFFFF;
+          text-align: center;
+          padding: 14px 38px;
+          text-decoration: none;
+        }
+
+        .dropdown {
+          float: left;
+          overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+          font-size: 16px;  
+          border: none;
+          outline: none;
+          color: #FFFFFF;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+          background-color: red;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+
+        .dropdown-content a {
+          float: none;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+
+        .dropdown-content a:hover {
+          background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        .text-box{
+            color: #fff;
+            position: absolute;
+        }
+        .text-box p{
+            padding-top: 1%;
+            font-size: 16px;
+            padding-left: 7%;
+            padding-right: 5%;
+            font-family: verdana;
+            margin-bottom: -5%;
+        }
+        .text-box h1{
+            padding-top: 2%;
+            padding-left: 4%;
+            font-size: 40px;
+            line-height: 90px;
+            margin-left: 2px;
+            font-family: verdana;
+            margin-bottom: -3%;
+        }
+        .text-box h3{
+            padding-top: 3%;
+            padding-left: 4%;
+            font-size: 25px;
+            line-height: 90px;
+            margin-left: 2px;
+            font-family: verdana;
+            margin-bottom: -3%;
+        }
+        .text-box .row{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .text-box a{
+            color:#fff;
             text-decoration: none;
-            padding: 3%;
-            line-height: -800px;
+            padding: 10px 20px;
+            margin-right: 20px;
+            border: 2px solid #fff;
+            margin-top: 10px;
         }
-        
-        .contents {
-            margin-top: -26px;
-            margin-left:20%;
+        .last {
+            border-color: 1px solid #222222;
+            background-color: #222222;
+            width: 100%;
         }
-        .img_wrap { 
-    	  position: relative; 
-    	  height: 200px; 
-    	  width: 257px; 
-    	} 
-    
-    	.img_description { 
-    	  position: absolute; 
-    	  top: 0; 
-    	  bottom: 0; 
-    	  left: 0; 
-    	  right: 0; 
-    	  color: #eeff00; 
-    	  visibility: hidden; 
-    	  opacity: 0; 
-    	  font-size: 23px; 
-    	  Text-align:center;
-          margin-top: 30%;
-          margin-left: -2.5%;
-    	  transition: opacity .2s, visibility .2s; 
-    	} 
-        .img_wrap:hover .img_description { 
-	      visibility: visible; 
-	      opacity: 1; 
-	    } 
-        .center5 {
-            margin-top: 10%;
-            border-color: 1px solid #EFEFEF;
+        .navbar1 a {
+          float: left;
+          display: block;
+          background-color: black;
+          color: white;
+          text-align: center;
+          padding: 10px 159.7px;
+          text-decoration: none;
+          font-size: 17px;
+          position: relative;
         }
-        .center4 {
-            margin-top: 8%;
-            margin-left: 0%;
+
+        .navbar1 a:hover {
+          background: #f1f1f1;
+          color: black;
         }
-        .zoom:hover {
-            transform: scale(1.1);
+        .navbar1>a.active> a:hover{
+            color: black;
+        }
+
+        .navbar1 a.active {
+          color: white;
         }
     </style>
-    <div class="nav">
-        <img src="logo2.png" alt="" width="12%" style="margin-left: 0%; width: 20%;">
-        <div class="contents">
-            <a href="#" style="font-size: 100%; font-family: 'Open Sans', sans-serif;">Home</a>
-            <a href="#" style="font-size: 100%; font-family: 'Open Sans', sans-serif;">About us</a>
-            <li class="nav-item dropdown">
-	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          		Dropdown link
-        	</a>
-        	<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-         		<a class="dropdown-item" href="#">Action</a>
-         	 	<a class="dropdown-item" href="#">Another action</a>
-          		<a class="dropdown-item" href="#">Something else here</a>
-        	</div>
-      	    </li>
-            <a href="#" style="font-size: 100%; font-family: 'Open Sans', sans-serif;">Quality</a>
-            <a href="#" style="font-size: 100%; font-family: 'Open Sans', sans-serif;">Clients</a>
-            <a href="#" style="font-size: 100%; font-family: 'Open Sans', sans-serif;"> Feedback</a>
-            <a href="#" style="font-size: 100%; font-family: 'Open Sans', sans-serif;">Contect us</a>
-            <a href="#" style="font-size: 100%; font-family: 'Open Sans', sans-serif;">Videos</a>
+    <section>
+    <div class="navbar" style="justify-content: center;">
+        <div id="logo">
+            <img src="logo2.png" alt="" width="5%" style="margin-left: 5%; margin-top: 1%; width: 20%;">
+        </div>
+        <div  id="navi" style="margin-left: 30%; margin-top: -3.5%;">
+            <a href="#">Home</a>
+            <a href="index1.html">About us</a>
+            <div class="dropdown">
+                <button class="dropbtn">Products 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Came Products</a>
+                  <a href="#">Air Curtains Products</a>
+                  <a href="#">Glass Systems</a>
+                  <a href="#">Automatic Door System</a>
+                  <a href="#">Geze sonderkonstrutionen</a>
+                  <a href="#">RWA and Ventilation System</a>
+                  <a href="#">Safety Technology</a>
+                  <a href="#">Spike barriers</a>
+                  <a href="#">Geze building Management</a>
+                  <a href="#">Door Technology</a>
+                  <a href="#">Geze Product Solutions</a>
+                </div>
+          </div>
+            <a href="#">Quality</a>
+            <a href="#">Clients</a>
+            <a href="#">Feedback</a>
+            <a href="#">Contact us</a>
+            <a href="#">Videos</a>
+        </div> 
+      </div>
+      </section>
+      <section>
+    <div class="text-box">
+        
+        <h1>------Welcome to Lotus International-------</h1>
+        <p>
+            LOTUS INTERNATIONAL is the importers of AUTOMATIC SLIDING DOORS, SWING DOORS, DOOR CLOSERS, FLOOR SPRINGS, GLASS PATCH FITTINGS, ALL GLASS FITTINGS, SLIDING FOLDING PARTITIONS, AUTOMATIC GATES, ROAD BARRIERS, AIR CURTAINS, MOTORISED CURTAINS WITH/WITHOUT REMOTE, BATHROOM FITTINGS, since the last sixteen years plus exclusively representing in Northen INDIA for GEZE of Germany, CAME of Italy, & BTX of USA.<br>LOTUS INTERNATIONAL have the credit of representing GEZE and all other Companies and we are providing the experience, Technology and service of these pioneers at your door step for all those Exclusive clients who insist on comfort, security and reliability. We provide proper solutions for any type of application from small type application to the latest INTELLIGENT BUILDINGS as the buildings of this kind are increasingly automated.<br>Here at LOTUS INTERNATIONAL we have an expert team who have undergone GEZE product training and have successfully installed these system throughout the country since 1995.<br>We have Installed a single leaf sliding gate of 120 METRES IN INDIA<br>Our main clients are AIRPORTS AUTHORITY OF INDIA & ALL MAJOR FIVE STAR HOTELS IN INDIA giving them the best products from the world<br>We are also providing after sales service and AMC for these items supplied by us and has the credit of not receiving a single complaint from any of our clients during these years of service except a few complaints due to faulty installation by the clients not following our instructions and instructions from the manual. We are steadily growing year after year and wish to cover our distribution network throughout the country with honest, sincere and Hardworking exclusive distributors or Associates. Hope that our association with your esteemed organization will definitely help us to achieve our goal.
+        </p>
+        <h3>---OUR PRODUCTS---</h3>
+        <div class="row" style="padding-left: 7%;">
+            <a href="#">Came Products</a>
+            <a href="#">Air Curtains Products</a>
+            <a href="#">Glass Systems </a>
+            <a href="#">Automatic Door System</a>
+            <a href="#">>Geze sonderkonstrutionen</a>
+            <a href="#">RWA and Ventilation System</a>
+            <a href="#">Safety Technology</a>
+            <a href="#">Spike barriers</a>
+            <a href="#">Geze building Management</a>
+            <a href="#">Door Technology</a>
+            <a href="#">Geze Product Solutions</a>
+            <a href="#">Solar Panel</a>
         </div>
     </div>
-    <div class="info">
-        <h1 style="color: black; text-align: center; padding-right: 8%; padding-left: 4%;">Welcome to Lotus International</h1>
-        <p>
-            LOTUS INTERNATIONAL is the importers of AUTOMATIC SLIDING DOORS, SWING DOORS, DOOR CLOSERS, FLOOR SPRINGS, GLASS PATCH FITTINGS, ALL GLASS FITTINGS, SLIDING FOLDING PARTITIONS, AUTOMATIC GATES, ROAD BARRIERS, AIR CURTAINS, MOTORISED CURTAINS WITH/WITHOUT REMOTE, BATHROOM FITTINGS, since the last sixteen years plus exclusively representing in Northen INDIA for GEZE of Germany, CAME of Italy, & BTX of USA.
-        </p>
-        <p>
-            LOTUS INTERNATIONAL have the credit of representing GEZE and all other Companies and we are providing the experience, Technology and service of these pioneers at your door step for all those Exclusive clients who insist on comfort, security and reliability. We provide proper solutions for any type of application from small type application to the latest INTELLIGENT BUILDINGS as the buildings of this kind are increasingly automated.
-        </p>
-        <p>
-            Here at LOTUS INTERNATIONAL we have an expert team who have undergone GEZE product training and have successfully installed these system throughout the country since 1995.
-        </p>
-        <p>
-            We have Installed a single leaf sliding gate of 120 METRES IN INDIA<br>Our main clients are AIRPORTS AUTHORITY OF INDIA & ALL MAJOR FIVE STAR HOTELS IN INDIA giving them the best products from the world
-        </p>
-        <p>
-            We are also providing after sales service and AMC for these items supplied by us and has
-the credit of not receiving a single complaint from any of our clients during these years of service except a few complaints due to faulty installation by the clients not following our instructions and instructions from the manual. We are steadily growing year after year and wish to cover our distribution network throughout the country with honest, sincere and Hardworking exclusive distributors or Associates. Hope that our association with your esteemed organization will definitely help us to achieve our goal
-        </p>
-    </div>
-    <div class="center5" id="420">
-        <br>
-        <div class="center4">
-            <div style="justify-content: center; display: flex;">
-                <div class="img_wrap">
-                    <a href="#">
-                        <img class="zoom" src="product1.jfif" width="260" sizes="(max-width: 479px) 80vw, 233px" alt="">
-                        <p class="img_description">Came Products</p> 
-                    </a>
-                </div>
-                <div class="img_wrap">
-                    <a href="#">
-                        <img class="zoom" src="product2.jfif" width="260" sizes="(max-width: 479px) 80vw, 233px" alt="">
-                        <p class="img_description">Air Curtains Products</p> 
-                    </a>
-                </div>
-                <div class="img_wrap">
-                    <a href="#">
-                        <img class="zoom" src="glasssys.jfif" width="260" sizes="(max-width: 479px) 80vw, 233px" alt="">
-                        <p class="img_description">Glass Systems</p> 
-                    </a>
-                </div>
-            </div>
-            <div style="justify-content: center; display: flex; margin-top: -2%;">
-                <div class="img_wrap">
-                    <a href="#">
-                        <img class="zoom" src="doorsystem.jfif" width="260" sizes="(max-width: 479px) 80vw, 233px" alt="">
-                        <p class="img_description">Automatic Door System</p> 
-                    </a>
-                </div>
-                <div class="img_wrap">
-                    <a href="#">
-                        <img class="zoom" src="geze.jfif" width="260" sizes="(max-width: 479px) 80vw, 233px" alt="">
-                        <p class="img_description">Geze sonderkonstrutionen</p> 
-                    </a>
-                </div>
-                <div class="img_wrap">
-                    <a href="#">
-                        <img class="zoom" src="rwa.jfif" width="260" sizes="(max-width: 479px) 80vw, 233px" alt="">
-                        <p class="img_description">RWA and Ventilation System</p> 
-                    </a>
-                </div>
-            </div>
-            <div style="justify-content: center; display: flex; margin-top: -2%;">
-                <div class="img_wrap">
-                    <a href="#">
-                        <img class="zoom" src="safe.jfif" width="260" sizes="(max-width: 479px) 80vw, 233px" alt="">
-                        <p class="img_description">Safety Technology</p> 
-                    </a>
-                </div>
-                <div class="img_wrap">
-                    <a href="#">
-                        <img class="zoom" src="barrier.jfif" width="260" sizes="(max-width: 479px) 80vw, 233px" alt="">
-                        <p class="img_description">Spike barriers</p> 
-                    </a>
-                </div>
-                <div class="img_wrap">
-                    <a href="#">
-                        <img class="zoom" src="buildmanage.jfif" width="260" sizes="(max-width: 479px) 80vw, 233px" alt="">
-                        <p class="img_description">Geze building Management</p> 
-                    </a>
-                </div>
-            </div>
-            <div style="justify-content: center; display: flex; margin-top: -3%;">
-                <div class="img_wrap">
-                    <a href="#">
-                        <img class="zoom" src="techdoor.jfif" width="260" sizes="(max-width: 479px) 80vw, 233px" alt="">
-                        <p class="img_description">Door Technology</p> 
-                    </a>
-                </div>
-                <div class="img_wrap">
-                    <a href="#">
-                        <img class="zoom" src="productsol.jfif" width="260" style="height: -60%;" sizes="(max-width: 479px) 80vw, 233px" alt="">
-                        <p class="img_description">Geze Product Solutions</p> 
-                    </a>
-                </div>
-                <div class="img_wrap">
-                    <a href="#">
-                        <img class="zoom" src="solorpan.jfif" width="260" sizes="(max-width: 479px) 80vw, 233px" alt="">
-                        <p class="img_description">Solar Panel</p> 
-                    </a>
-                </div>
-            </div>
-        </div>
-        <br><br><br><br><br><br>
-    </div>
+    </section>
+<section>
+    <div class="navbar1" style="margin-top: 40%;">
+        <a href="#" class="active">Home</a>
+        <a href="#">About us</a>
+        <a href="#">Feedback</a>
+        <a href="#">Contact</a>
+      </div>
+</section>
 </body>
 </html>
