@@ -7,270 +7,215 @@
     <title>Document</title>
 </head>
 <body>
-    <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/v2.js"></script>
-    
-    <h1 style="text-align: center; font-size: 30px;  font-family: Suisseintl,sans-serif; color: #016680;">Algorand Foundation Community Interest Form</h1>
-<script>
-	hbspt.forms.create({
-    region: "eu1",
-    portalId: "26119259",
-    formId: "0fea6c11-dad7-44f8-8454-cce46ebd3755",
-    version: "V2_PRERELEASE",
-    onFormReady: function ($form){
-      document.querySelectorAll('[name="firstname"]')[0].setAttribute('placeholder', 'Enter first name');
-      document.querySelectorAll('[name="lastname"]')[0].setAttribute('placeholder', 'Enter last name');
-      document.querySelectorAll('[name="email"]')[0].setAttribute('placeholder', 'Enter email address');
-      document.querySelectorAll('[name="city"]')[0].setAttribute('placeholder', 'Enter city name');
-    }
+    <style>
+        body {
+            margin: 0%;
+			padding: 0;
+            margin-top: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+            margin-bottom: 0%;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('background1.AVIF');
+            background-size: cover;
+            background-position: center;
+            background-color: #FFFFFF;
+        }
+        .navbar {
+          overflow: hidden;
+        }
 
-	});
-</script>
-<style>
-     html {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    font-family: sans-serif;
-}  
-body{
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 5%;
-    font-size: 1rem;
-  }
+        .navbar a {
+          float: left;
+          font-size: 16px;
+          color: #FFFFFF;
+          text-align: center;
+          padding: 14px 38px;
+          text-decoration: none;
+        }
 
-h1{
-    text-align: center; 
-    font-size: 30px;  
-    font-family: Suisseintl,sans-serif; 
-    color: #016680;
-    margin-bottom: 5%;
-    width: 100%;
-}
+        .dropdown {
+          float: left;
+          overflow: hidden;
+        }
 
-.hbspt-form > form {
-    display: flex;
-    flex-direction: column;
-    row-gap: 2rem;
-  }
-  label {
-    font-weight: 600;
-    display: block;
-    color: #201f21;
-    margin-bottom: 0.4rem;
-    font-family: Suisseintl,sans-serif; 
-  }
+        .dropdown .dropbtn {
+          font-size: 16px;  
+          border: none;
+          outline: none;
+          color: #FFFFFF;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+        }
 
-  .input > input, .input > select, .input > textarea {
-    display: block;
-    width: 100% ;
-    line-height: 1.42857143;
-    height: 3.125rem;
-    padding-right: 0rem;
-    padding-left: 2rem;
-    border: 1px solid rgba(32,31,33,.4);
-    border-radius: 50rem;
-    background-color: transparent;
-    font-size: inherit;
-  }
-  #label-select_country-0fea6c11-dad7-44f8-8454-cce46ebd3755{
-    margin-top: -8%;
-  }
-  #label-city-0fea6c11-dad7-44f8-8454-cce46ebd3755{
-    margin-top: -8%;
-  }
-  #firstname-0fea6c11-dad7-44f8-8454-cce46ebd3755{
-    width: 91%;
-    position: relative;
-  }
-  
-#email-0fea6c11-dad7-44f8-8454-cce46ebd3755{
-  width: 100% !important;
-}
-#region-0fea6c11-dad7-44f8-8454-cce46ebd3755{
-  width: 105% !important;
-}
-#are_you_a_developer_-0fea6c11-dad7-44f8-8454-cce46ebd3755{
-  width: 105% !important;
-}
-#open_to_speaking_opportunities_-0fea6c11-dad7-44f8-8454-cce46ebd3755{
-  width: 100% !important;
-}
-#select_country-0fea6c11-dad7-44f8-8454-cce46ebd3755{
-    height: 3.5rem;
-}
+        .navbar a:hover, .dropdown:hover .dropbtn {
+          background-color: red;
+        }
 
-#how_did_you_hear_about_us_-0fea6c11-dad7-44f8-8454-cce46ebd3755{
-  width: 100% !important;
-}
-.hs_area_of_interest.hs-area_of_interest.hs-fieldtype-checkbox.field.hs-form-field{
-    margin-top: -4%;
-}
-  .input > select{
-    padding-left: 1rem;
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
 
-  }
-  .inputs-list{
-    list-style: none;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-left: 0;
-  }
-  .input{
-    text-align: inherit;
-  }
+        .dropdown-content a {
+          float: none;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
 
-  ::placeholder{
-    padding-left: 0rem;
-  }
+        .dropdown-content a:hover {
+          background-color: #ddd;
+        }
 
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        .text-box{
+            color: #fff;
+            position: absolute;
+        }
+        .text-box p{
+            padding-top: 1%;
+            font-size: 16px;
+            padding-left: 7%;
+            padding-right: 5%;
+            font-family: verdana;
+            margin-bottom: -5%;
+        }
+        .text-box h1{
+            padding-top: 2%;
+            padding-left: 4%;
+            font-size: 40px;
+            line-height: 90px;
+            margin-left: 2px;
+            font-family: verdana;
+            margin-bottom: -3%;
+        }
+        .text-box h3{
+            padding-top: 3%;
+            padding-left: 4%;
+            font-size: 25px;
+            line-height: 90px;
+            margin-left: 2px;
+            font-family: verdana;
+            margin-bottom: -3%;
+        }
+        .text-box .row{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .text-box a{
+            color:#fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin-right: 20px;
+            border: 2px solid #fff;
+            margin-top: 10px;
+        }
+        .last {
+            border-color: 1px solid #222222;
+            background-color: #222222;
+            width: 100%;
+        }
+        .navbar1 a {
+          float: left;
+          display: block;
+          background-color: black;
+          color: white;
+          text-align: center;
+          padding: 10px 159.7px;
+          text-decoration: none;
+          font-size: 17px;
+          position: relative;
+        }
 
-  fieldset{
-    display: flex;
-    max-width: 100% !important;
+        .navbar1 a:hover {
+          background: #f1f1f1;
+          color: black;
+        }
+        .navbar1>a.active> a:hover{
+            color: black;
+        }
 
-  }
-  .hs_email.hs-email, .form-columns-2 > div > .hs-form-field, .form-columns-1 > .hs-form-field, .form-columns-1 > .hs-dependent-field, .legal-consent-container > div > .hs-dependent-field > .hs-form-field > .input > .inputs-list > li > label > span{
-    width: 100% !important;
-	}
-
-  .form-columns-2 > div{
-  	width: 50%;
-  }
-  .form-columns-0{
-  	display: none;
-  }
-  input[type="checkbox"]{
-    width: 1.5rem;
-    height: 1.5rem;
-    min-height: 1.5rem;
-    min-width: 1.5rem;
-    margin-top: 0px;
-    margin-right: 1rem;
-    border-width: 2px;
-    border-radius: 0.5rem;
-    transition-property: all;
-    transition-duration: 200ms;
-    transition-timing-function: ease;
-    box-sizing: border-box;
-    padding: 0;
-    cursor: pointer;
-  }
-  .hs-form-checkbox{
-    font-weight: 500 !important;
-  }
-
- 
-  .actions > .hs-button {
-    padding: 0.75rem 3rem 0.75rem 1.6rem;
-    border: 1px #000;
-    border-radius: 50rem;
-    background-color: #dcfe54;
-    background-image: url("https://assets-global.website-files.com/62d96b0e9ea60fd1c96a1b50/62d96b0e9ea60f6d3d6a1cfc_arrow-right.svg");
-    background-position: 82% 50%;
-    background-size: auto;
-    background-repeat: no-repeat;
-    -webkit-transition: .2s;
-    transition: .2s;
-    font-family: Suisseintl,sans-serif;
-    color: #201f21;
-    font-size: 1rem;
-    font-weight: 400;
-    text-align: center;
-    text-decoration: none;
-    width: 12rem;
-  }
-
-  .hs-error-msg, .hs-main-font-element{
-    color: red;
-  }
-
-  .placeholder{
-    margin-left: 10%;
-  }
-
-  p{
-    display: none;
-  }
-  
-  [role="checkbox"] > li > label > span {
-    vertical-align: super;
-	}
-  #community_role_position0-0fea6c11-dad7-44f8-8454-cce46ebd3755{
-    font-weight: 500;
-  }
-
-  @media only screen and (max-width: 500px){
-    .hbspt-form > form, fieldset{
-      display: block;
-    }
-    form > fieldset > div {
-      padding: 10px 0px;
-    }
-    .form-columns-2 > div{
-      width: 100%;
-    }
-  }
-  @media screen and (max-width: 480px){
-  html {
-      font-size: calc(0.7497390396659708rem + 0.4175365344467641vw);
-  }
-  body{
-    margin-left: 4%;
-    margin-right: 6%;
-  }
-  #email-0fea6c11-dad7-44f8-8454-cce46ebd3755{
-    width: 95% !important;
-  }
-  #label-select_country-0fea6c11-dad7-44f8-8454-cce46ebd3755{
-    margin-top: 0%;
-  }
-  #label-city-0fea6c11-dad7-44f8-8454-cce46ebd3755{
-    margin-top: 0%;
-  }
-  h1{
-    font-size: 110% !important;
-  }
-  #select_country-0fea6c11-dad7-44f8-8454-cce46ebd3755{
-    width: 104%;
-  }
-  }
-  @media screen and (max-width: 768px){
-  html {
-      font-size: calc(0.5416666666666667rem + 0.6944444444444444vw);
-  }
-  body{
-    margin-left: 4%;
-    margin-right: 6%;
-  }
-}
-  @media screen and (max-width: 992px){
-  html {
-      font-size: calc(0.38392857142857145rem + 0.8928571428571428vw);
-  }
-}
-  @media screen and (max-width: 1440px){
-  html {
-      font-size: calc(0.3348214285714286rem + 0.6696428571428571vw);
-  }
-  body{
-    margin-left: 4%;
-    margin-right: 6%;
-  }
-  #firstname-0fea6c11-dad7-44f8-8454-cce46ebd3755{
-    width: 95%;
-  }
-}
-  @media screen and (max-width: 1920px){
-  html {
-      font-size: calc(0.625rem + 0.41666666666666674vw);
-  }
-}
-
-   [role="checkbox"] > li > label > span {
-    vertical-align: super;
-	}
-  
-</style>
-
+        .navbar1 a.active {
+          color: white;
+        }
+    </style>
+    <section>
+    <div class="navbar" style="justify-content: center;">
+        <div id="logo">
+            <img src="logo2.png" alt="" width="5%" style="margin-left: 5%; margin-top: 1%; width: 20%;">
+        </div>
+        <div  id="navi" style="margin-left: 30%; margin-top: -3.5%;">
+            <a href="#">Home</a>
+            <a href="index1.html">About us</a>
+            <div class="dropdown">
+                <button class="dropbtn">Products 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Came Products</a>
+                  <a href="#">Air Curtains Products</a>
+                  <a href="#">Glass Systems</a>
+                  <a href="#">Automatic Door System</a>
+                  <a href="#">Geze sonderkonstrutionen</a>
+                  <a href="#">RWA and Ventilation System</a>
+                  <a href="#">Safety Technology</a>
+                  <a href="#">Spike barriers</a>
+                  <a href="#">Geze building Management</a>
+                  <a href="#">Door Technology</a>
+                  <a href="#">Geze Product Solutions</a>
+                </div>
+          </div>
+            <a href="#">Quality</a>
+            <a href="#">Clients</a>
+            <a href="#">Feedback</a>
+            <a href="#">Contact us</a>
+            <a href="#">Videos</a>
+        </div> 
+      </div>
+      </section>
+      <section>
+    <div class="text-box">
+        
+        <h1>------Welcome to Lotus International-------</h1>
+        <p>
+            LOTUS INTERNATIONAL is the importers of AUTOMATIC SLIDING DOORS, SWING DOORS, DOOR CLOSERS, FLOOR SPRINGS, GLASS PATCH FITTINGS, ALL GLASS FITTINGS, SLIDING FOLDING PARTITIONS, AUTOMATIC GATES, ROAD BARRIERS, AIR CURTAINS, MOTORISED CURTAINS WITH/WITHOUT REMOTE, BATHROOM FITTINGS, since the last sixteen years plus exclusively representing in Northen INDIA for GEZE of Germany, CAME of Italy, & BTX of USA.<br>LOTUS INTERNATIONAL have the credit of representing GEZE and all other Companies and we are providing the experience, Technology and service of these pioneers at your door step for all those Exclusive clients who insist on comfort, security and reliability. We provide proper solutions for any type of application from small type application to the latest INTELLIGENT BUILDINGS as the buildings of this kind are increasingly automated.<br>Here at LOTUS INTERNATIONAL we have an expert team who have undergone GEZE product training and have successfully installed these system throughout the country since 1995.<br>We have Installed a single leaf sliding gate of 120 METRES IN INDIA<br>Our main clients are AIRPORTS AUTHORITY OF INDIA & ALL MAJOR FIVE STAR HOTELS IN INDIA giving them the best products from the world<br>We are also providing after sales service and AMC for these items supplied by us and has the credit of not receiving a single complaint from any of our clients during these years of service except a few complaints due to faulty installation by the clients not following our instructions and instructions from the manual. We are steadily growing year after year and wish to cover our distribution network throughout the country with honest, sincere and Hardworking exclusive distributors or Associates. Hope that our association with your esteemed organization will definitely help us to achieve our goal.
+        </p>
+        <h3>---OUR PRODUCTS---</h3>
+        <div class="row" style="padding-left: 7%;">
+            <a href="#">Came Products</a>
+            <a href="#">Air Curtains Products</a>
+            <a href="#">Glass Systems </a>
+            <a href="#">Automatic Door System</a>
+            <a href="#">>Geze sonderkonstrutionen</a>
+            <a href="#">RWA and Ventilation System</a>
+            <a href="#">Safety Technology</a>
+            <a href="#">Spike barriers</a>
+            <a href="#">Geze building Management</a>
+            <a href="#">Door Technology</a>
+            <a href="#">Geze Product Solutions</a>
+            <a href="#">Solar Panel</a>
+        </div>
+    </div>
+    </section>
+<section>
+    <div class="navbar1" style="margin-top: 40%;">
+        <a href="#" class="active">Home</a>
+        <a href="#">About us</a>
+        <a href="#">Feedback</a>
+        <a href="#">Contact</a>
+      </div>
+</section>
 </body>
 </html>
