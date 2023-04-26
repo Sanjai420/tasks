@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#photo-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+}
+
+#photo-container img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  animation: move-right 10s linear infinite;
+}
+
+@keyframes move-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+</style>
+</head>
+<body>
+
+  <div id="photo-container">
+    <img src="img1.jpg" alt="Photo">
+  </div>
+  <script>
+    // Optional: Add code here to adjust animation duration or delay.
+
+    window.addEventListener('scroll', function() {
+      const photoContainer = document.getElementById('photo-container');
+      const photoContainerRect = photoContainer.getBoundingClientRect();
+      const photo = photoContainer.querySelector('img');
+      const photoRect = photo.getBoundingClientRect();
+
+      if (photoRect.right <= photoContainerRect.left) {
+        // Photo has moved off-screen to the right, so reset its position.
+        photo.style.transform = 'translateX(-100%)';
+      }
+    });
+
+  </script>
+
+</body>
+</html>
+
+

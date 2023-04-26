@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+    <title>Boldo - Edgar Allan</title>
+    <style>
+        .nav{
+            display: flex;
+            justify-content: center;
+            border: 1px solid #0A2640;
+            background-color: #0A2640;
+            margin-top: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+            padding: 1%;
+        }
+        ul{
+            overflow: hidden;
+            list-style-type: none;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: block;
+            text-align: center;
+            padding: 14px 40px;
+            text-decoration: none;
+            color: white;
+        }
+        .logo1{
+            float: left;
+            margin-top: 1%;
+            margin-right: 45%;
+        }
+        .active{
+            border: white;
+            border-radius: 25px;
+            background-color: white;
+            color: #0A2640;
+            width: 90px;
+        }
+        .nav-content{
+            margin-left: -10%;
+        }
+        .about{
+            background-color: #0A2640;
+            margin-top: -1%;
+            padding-top: 1%;
+            padding-bottom: 10%;
+        }
+        .about h4, .about h1, .about p{
+            color: white;
+        }
+        .about h1{
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 84px;
+        }
+        .about h4{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+        }
+        .imd1{
+            display: flex;
+            justify-content: center;
+            margin-top: -8%;
+            margin-left: 5%;
+        }
+        .img1, .img2, .img3, .img4, .img5{
+            width: 80%;
+        }
+        .numani{
+            display: flex;
+            justify-content: center;
+        }
+        .team{
+            display: flex;
+            justify-content: center;
+        }
+        .smallalign{
+            display: flex;
+            justify-content: center;
+            margin-right: 50%;
+            margin-top: 5%;
+            width: 60%;
+        }
+        .seclast{
+            display: flex;
+            justify-content: center;
+        }
+        .simpleword{
+            margin-left: 30%;
+        }
+        .simpleword h4{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+        }
+        .simpleword h1{
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 72px;
+        }
+        .simpleword p{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+        }
+        .simplealign{
+            background-color: #0A2640;
+            padding-top: 4%;
+            padding-bottom: 4%;
+        }
+        .simplealign1 h4, .simplealign1 h1{
+            text-align: center;
+            color: white;
+        }
+        .simplealign1 h4{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+        }
+        .simplealign1 h1{
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 72px;
+        }
+        .numani{
+            margin-left: 1%;
+        }
+        .numani1{
+            margin-right: 20%;
+        }
+        .numani2{
+            margin-right: 0%;
+        }
+        .numani3{
+            margin-left: 18%;
+        }
+        .numani1 h1{
+            color: #4FE9A4;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 96px;
+            line-height: 56px;
+        }
+        .numani2 h1{
+            color: #4FE9A4;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 96px;
+            line-height: 56px;
+        }
+        .numani3 h1{
+            color: #4FE9A4;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 96px;
+            line-height: 56px;
+        }
+        .numani1 p{
+            margin-top: -20%;
+            color: white;
+            margin-left: 15%;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+        }
+        .numani2 p{
+            color: white;
+            margin-top: -20%;
+            margin-left: 18%;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+        }
+        .numani3 p{
+            color: white;
+            margin-top: -20%;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+        }
+        .normalword h4{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+        }
+        .normalword h2{
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 72px;
+        }
+        .normalword p{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+        }
+        .normalword{
+            margin-left: 25%;
+            margin-top: 5%;
+        }
+        .team{
+            margin-top: 5%;
+            margin-left: 12%;
+        }
+        .team1{
+            margin-right: 10%;
+        }
+        .team2{
+            margin-right: 10%;
+        }
+        .team3{
+            margin-right: 10%;
+        }
+        .hardpart{
+            background-color: #0A2640;
+            padding-top: 5%;
+            margin-top: 6%;
+        }
+        .hardpart h4{
+            color: white;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+        }
+        .hardpart h1{
+            color: white;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 72px;
+        }
+        .hardpart p{
+            color: white;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+        }
+        .hardpart h3{
+            color: white;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 48px;
+        }
+        .smallalign1{
+            margin-left: 13%;
+            margin-top: -5%;
+            margin-bottom: 10%;
+        }
+        .hardpart1{
+            margin-left: 15%;
+        }
+        .formy1{
+            background-color: #0A2640;
+            border-radius: 5px;
+            width: 70%;
+            margin-top: 5%;
+            margin-left: 15%;
+            padding-bottom: 4%;
+        }
+        .formy2{
+            padding-top: 3%;
+        }
+        .formy2 h1{
+            text-align: center;
+            color: white;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 72px;
+        }
+        .box{
+            margin-left: 25%;
+            width: 30%;
+            padding: 1.5%;
+            border-radius: 50px;
+        }
+        button{
+            border-radius: 50px;
+            width: 20%;
+            padding: 1.5%;
+            margin-left: 2%;
+            background-color: #4FE9A4;
+        }
+        .seclast{
+            margin-top: 10%;
+        }
+        .seclast1{
+            margin-right: 8%;
+        }
+        .seclast2{
+            margin-right: 8%;
+        }
+        .seclast3{
+            margin-right: 8%;
+        }
+        .seclast4{
+            margin-right: 8%;
+        }
+        .seclast2 a, .seclast3 a, .seclast4 a{
+            text-decoration: none;
+            color: black;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+        }
+        .seclast2 h3, .seclast3 h3, .seclast4 h3{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 32px;
+        }
+        .seclast1 p{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+        }
+        .seclast2, .seclast3 , .seclast4{
+            margin-top: -1%;
+        }
+        .imd2{
+            position: relative;
+            overflow: hidden;
+        }
+        .img1{
+            position: absolute;
+            left: 0;
+            top: 0;
+            animation: move-right 10s linear infinite;
+        }
+        @keyframes move-right {
+          0% {
+            transform: translateX(-100%);
+          }
+          100% {
+            transform: translateX(20%);
+          }
+        }
+        .img4{
+            margin-top: 90%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo1">
+                <img src="boldologo.png" class="logo">
+            </div>
+            <div class="nav-content">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a class="active" href="#about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="about">
+        <center>
+            <h4>About</h4>
+            <h1>We love to make great <br>things, things that matter.</h1>
+            <p>Funding handshake buyer business-to-business metrics iPad partnership. First mover advantage<br>innovator success deployment non-disclosure.</p>
+        </center>        
+    </div>
+    <div class="imd">
+        <div class="imd1">
+            <div class="imd2">
+                <img src="img2.png" class="img1">
+                <img src="img4.png" class="img4">
+            </div>
+            <div>
+                <img src="img1.jpg" class="img2">
+            </div>
+            <div>
+                <img src="img3.png" class="img3"><br><br>
+                <img src="img5.png" class="img5">
+            </div>
+        </div>
+        <div>
+            <div class="simpleword">
+                <h4>Our story</h4>
+                <h1>Handshake infographic mass market<br>crowdfunding iteration.</h1>
+                <p>Conversion angel investor entrepreneur first mover advantage. Handshake<br>infographic mass market crowdfunding iteration. Traction stock user experience<br>deployment beta innovator incubator focus. Sales user experience branding growth<br>hacking holy grail monetization conversion prototype stock network effects. Learning<br>curve network effects return on investment bootstrapping business-to-consumer. </p>
+            </div>
+        </div>
+    </div>
+    <div class="simplealign">
+        <div class="simplealign1">
+            <h4>Our numbers</h4>
+            <h1>Handshake infographic mass market<br>crowdfunding iteration.</h1>
+            <div class="numani">
+                <div class="numani1">
+                    <h1>120m</h1>
+                    <p>Cool feature title</p>
+                </div>
+                <div class="numani2">
+                    <h1>10.000</h1>
+                    <p>Cool feature title</p>
+                </div>
+                <div class="numani3">
+                    <h1>240</h1>
+                    <p>Cool feature title</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="normalword">
+            <h4>Our team</h4>
+            <h2>The leadership team</h2>
+            <p>Conversion angel investor entrepreneur first mover advantage. Handshake<br>infographic mass market crowdfunding iteration. Traction stock user experience<br>deployment beta innovator incubator focus. </p>
+        </div>
+        <div class="team">
+            <div class="team1">
+                <img src="Team Member.png">
+            </div>
+            <div class="team2">
+                <img src="Team Member (1).png">
+            </div>
+            <div class="team3">
+                <img src="Team Member (2).png">
+            </div>
+        </div>
+    </div>
+    <div class="hardpart">
+        <div class="hardpart1">
+            <h4>Our values</h4>
+            <h1>Things in we believe</h1>
+            <p>Conversion angel investor entrepreneur first mover advantage. Handshake<br>infographic mass market crowdfunding iteration. Traction stock user experience<br>deployment beta innovator incubator focus. </p>
+            <div class="smallalign">
+                <div>
+                    <img src="Image (4).png">
+                </div>
+                <div class="smallalign1">
+                    <h3>We are commited.</h3>
+                    <p>Conversion angel investor entrepreneur first mover advantage.<br>Handshake infographic mass market crowdfunding iteration. </p>
+                </div>
+            </div>
+            <div class="smallalign">
+                <div>
+                    <img src="Image (5).png">
+                </div>
+                <div class="smallalign1">
+                    <h3>We are responsible.</h3>
+                    <p>Conversion angel investor entrepreneur first mover advantage. <br>Handshake infographic mass market crowdfunding iteration.  </p>
+                </div>
+            </div>
+            <div class="smallalign">
+                <div>
+                    <img src="Image (6).png">
+                </div>
+                <div class="smallalign1">
+                    <h3>We aim for progress.</h3>
+                    <p>Conversion angel investor entrepreneur first mover advantage.<br>Handshake infographic mass market crowdfunding iteration. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="formy">
+        <div class="formy1">
+            <div class="formy2">
+                <h1>An enterprise template to ramp<br>up your company website</h1><br>
+                <form>
+                    <input type="email" id="email" name="email" class="box"><button>Start now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="seclast">
+        <div class="seclast1">
+            <img src="Logo.png">
+            <p>Social media validation business model<br>canvas graphical user interface launch<br>party creative facebook iPad twitter.</p>
+            <p>All rights reserved.</p>
+        </div>
+        <div class="seclast2">
+            <h3>Landings</h3>
+            <a href="#">Home</a><br><br>
+            <a href="#">Products</a><br><br>
+            <a href="#">Services</a>
+        </div>
+        <div class="seclast3">
+            <h3>Company</h3>
+            <a href="#">Home</a><br><br>
+            <a href="#">Careers</a><br><br>
+            <a href="#">Services</a>
+        </div>
+        <div class="seclast4">
+            <h3>Resources</h3>
+            <a href="#">Blog</a><br><br>
+            <a href="#">Products</a><br><br>
+            <a href="#">Services</a>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('scroll', function() {
+          const photoContainer = document.getElementById('imd2');
+          const photoContainerRect = photoContainer.getBoundingClientRect();
+          const photo = photoContainer.querySelector('img1');
+          const photoRect = photo.getBoundingClientRect();
+    
+          if (photoRect.right <= photoContainerRect.left) {
+            // Photo has moved off-screen to the right, so reset its position.
+            photo.style.transform = 'translateX(-100%)';
+          }
+        });
+    
+      </script>
+</body>
+</html>
