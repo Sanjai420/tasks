@@ -1,0 +1,19 @@
+*{
+    margin-top: 5px;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+    text-align: center;
+}
+#container{
+    margin: auto;
+    border: 3px solid;
+    width: 550;
+    height: 550;
+    padding: 25px;
+}
+#score{
+    font-size: 2em;
+}
+#gameBoard{
+    border: 3px solid;
+}
