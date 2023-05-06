@@ -11,12 +11,18 @@ let foodY;
 let xVel=25;
 let yVel=0;
 let score=0;
+let maxScore = 0;
 let active=true;  
 let started=false;
 
 let snake=[
     {x:0,y:0}
 ]
+
+if (localStorage.getItem('maxScore')) {
+    maxScore = localStorage.getItem('maxScore');
+  }
+
 window.addEventListener('keydown',keyPress)
 startGame();
 
@@ -28,6 +34,12 @@ function startGame(){
     displayFood();
     drawSnake();
     // moveSnake();
+    if (maxScore) {
+        scoreText.textContent = score + ' (MaxScore: ' + maxScore + ')';
+    } else {
+        scoreText.textContent = 'Score:'+ score;
+    }
+    
 }
 
 function createFood(){
@@ -35,6 +47,15 @@ function createFood(){
         foodX = Math.floor(Math.random() * (WIDTH/UNIT)) * UNIT;
         foodY = Math.floor(Math.random() * (HEIGHT/UNIT)) * UNIT;
     } while (snake.some(snakePart => snakePart.x == foodX && snakePart.y == foodY));
+
+    if (score > maxScore) {
+        localStorage.setItem('maxScore', score);
+        maxScore = score;
+    } else {
+        maxScore = localStorage.getItem('maxScore') || 0;
+    }
+    
+    
 }
 
 
@@ -127,8 +148,7 @@ function checkGameOver(){
         active=false;
         return;
     }
-
-    // Check if the snake has collided with its body
+    
     for(let i=1; i<snake.length; i++){
         if(snake[0].x==snake[i].x && snake[0].y==snake[i].y){
             active=false;
