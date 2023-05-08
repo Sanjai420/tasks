@@ -35,9 +35,9 @@ function startGame(){
     drawSnake();
     // moveSnake();
     if (maxScore) {
-        scoreText.textContent = score + ' (MaxScore: ' + maxScore + ')';
+        scoreText.textContent = `${score} (MaxScore: ${maxScore})`;
     } else {
-        scoreText.textContent = 'Score:'+ score;
+        scoreText.textContent = `Score: ${score}`;
     }
     
 }
@@ -148,7 +148,8 @@ function checkGameOver(){
         active=false;
         return;
     }
-    
+
+    // Check if the snake has collided with its body
     for(let i=1; i<snake.length; i++){
         if(snake[0].x==snake[i].x && snake[0].y==snake[i].y){
             active=false;
