@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Range_Slider</title>
+</head>
+<body>
+    <h1>Range Slider</h1>
+
+    <div class="slidecontainer">
+        <form>
+            <div style="display: flex;justify-content: left;">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                <p style="margin-left: 3%; font-size: 18px; margin-top: 0.5%;">Value: <span id="demo"></span></p>
+            </div>
+            <div style="display: flex;justify-content: left;">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange1">
+                <p style="margin-left: 3%; font-size: 18px; margin-top: 0.5%;">Value: <span id="demo1"></span></p>
+            </div>
+            <div style="display: flex;justify-content: left;">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange2">
+                <p style="margin-left: 3%; font-size: 18px; margin-top: 0.5%;">Value: <span id="demo2"></span></p>
+            </div>
+
+        </form>
+        <p>Maximum Value: <span id="max"></span></p>
+    </div>
+
+    <script src="connect.js"></script>
+</body>
+</html>
